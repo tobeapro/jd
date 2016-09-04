@@ -16,6 +16,7 @@ input{border:none;}
 .clearFloat:after{content:"";display:block;clear:both;}
 .clearFloat{zoom:1;}
 </style>
+<script src="script/js.js"></script>
 <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.js"></script>
 <script>
 $(function(){
@@ -129,6 +130,20 @@ $(".shop-list li").mouseover(function(){
 				$(".shop-center-side li").eq(i).hide()
 			}
 		}
+	})
+
+$(".jd-right").click(function(){
+	if($(".jd-ad-list").css("left")=="-3000px"){
+	$(".jd-ad-list").css("left","0px")
+		}
+	$(".jd-ad-list").animate({"left":"-=1000px"},500);
+	
+	})
+$(".jd-left").click(function(){
+	if($(".jd-ad-list").css("left")=="0px"){
+	$(".jd-ad-list").css("left","-3000px")
+		}
+	$(".jd-ad-list").animate({"left":"+=1000px"},500);
 	})
 })
 </script>
@@ -596,8 +611,7 @@ $(".shop-list li").mouseover(function(){
 										<a href="#"><img src="http://img12.360buyimg.com/vclist/jfs/t2854/139/1362485568/3897/5b74f770/573c0ed1Nee530fec.jpg"></a>
 									</div>
 							</div>
-							
-				
+											
 		</div>
 			<ul class="fl" id="nav-list">
 				<li><a href="#">服装城</a></li>
@@ -673,16 +687,35 @@ $(".shop-list li").mouseover(function(){
 			</div>
 		</div>
 		<div>
-			<div class="fl jd-ad" style="width:1000px;margin-top:10px;">
+			<div class="fl jd-ad" style="width:1000px;height:167px;margin-top:10px;overflow:hidden;position:relative;left:0">
+				<div class="jd-ad-list">
 				<li>
 					<a href="#"><img src="http://img10.360buyimg.com/vclist/jfs/t3163/113/1153884029/20037/9467c4bc/57c7bba6N1d9f7f85.jpg"></a>
 					<a href="#"><img src="http://img30.360buyimg.com/da/jfs/t3202/53/1166046483/23492/53715ea1/57c785e8N0323450a.jpg"></a>
 					<a href="#"><img src="http://img13.360buyimg.com/da/jfs/t3055/330/1243001008/13622/e3aeb689/57c8e21aNf8671a46.jpg"></a>
 					<a href="#"><img src="http://img20.360buyimg.com/da/jfs/t3283/240/1201789171/28871/d9b32b3b/57c803f8N38e99cb0.jpg"></a>
 				</li>
-				<li></li>	
-				<li></li>	
-
+				<li>
+					<a href="#"><img src="http://img14.360buyimg.com/vclist/jfs/t3139/60/987082765/12288/14ad6019/57c3a5d6Nf4e693b3.jpg"></a>
+					<a href="#"><img src="http://img14.360buyimg.com/vclist/jfs/t3139/196/853478958/15640/318a5c3f/57c018bbN6189fa22.jpg"></a>
+					<a href="#"><img src="http://img30.360buyimg.com/da/jfs/t3028/317/1267195959/17123/9ec27cfe/57bfef0aNb65a5215.jpg"></a>
+					<a href="#"><img src="http://img30.360buyimg.com/da/jfs/t3277/114/1006389702/17253/94fe909d/57c3d8b1N2339f203.jpg"></a>
+				</li>	
+				<li>
+					<a href="#"><img src="http://img14.360buyimg.com/vclist/jfs/t3097/270/783765182/12289/c7947ea5/57bea072Na15cb003.jpg"></a>
+					<a href="#"><img src="http://img14.360buyimg.com/vclist/jfs/t3013/344/1152662406/19001/85cc18ce/57be9d22N757900ce.jpg"></a>
+					<a href="#"><img src="http://img12.360buyimg.com/da/jfs/t769/106/1035911116/19452/a6fa4a81/5510d809N70c3eb71.jpg"></a>
+					<a href="#"><img src="http://img13.360buyimg.com/da/jfs/t3094/28/1126328644/19606/17d58023/57c6a30fNd270cf26.jpg"></a>
+				</li>
+				<li>
+					<a href="#"><img src="http://img10.360buyimg.com/vclist/jfs/t3163/113/1153884029/20037/9467c4bc/57c7bba6N1d9f7f85.jpg"></a>
+					<a href="#"><img src="http://img30.360buyimg.com/da/jfs/t3202/53/1166046483/23492/53715ea1/57c785e8N0323450a.jpg"></a>
+					<a href="#"><img src="http://img13.360buyimg.com/da/jfs/t3055/330/1243001008/13622/e3aeb689/57c8e21aNf8671a46.jpg"></a>
+					<a href="#"><img src="http://img20.360buyimg.com/da/jfs/t3283/240/1201789171/28871/d9b32b3b/57c803f8N38e99cb0.jpg"></a>
+				</li>
+				</div>	
+				<div class="jd-left" style="position:absolute;top:75px;left:15px;font-size:30px;width:30px;height:30px;background:rgba(200,200,200,0.5)">&lt;</div>
+				<div class="jd-right" style="position:absolute;top:75px;right:15px;font-size:30px;width:30px;height:30px;background:rgba(200,200,200,0.5)">&gt;</div>
 			</div>
 		</div>
 	</div>	
