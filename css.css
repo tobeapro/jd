@@ -65,6 +65,8 @@
 #news-bottom a{display:inline-block;width:62px;height:20px;font-weight:bold;color:#000;text-align:center;padding-top:45px;padding-bottom:5px;}
 
 .jd-ad li a{width:245px;float:left;border-left:2px solid #fff;}
+.jd-ad-list{position:absolute;left:0px;}
+.jd-ad-list li{display:inline-block;}
 .shop-list{border-bottom:2px solid #C81623;}
 .shop-list h1{font-size:20px;}
 .shop-list ul li{display:inline-block;position:relative;}
